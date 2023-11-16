@@ -39,6 +39,9 @@ public class ProdutoController {
     return produtoService.obterPorId(id);
   }
 
+  /**
+   * 
+   */
   @DeleteMapping("/{id}")
   public String deletar(@PathVariable Integer id){
     produtoService.deletar(id);
